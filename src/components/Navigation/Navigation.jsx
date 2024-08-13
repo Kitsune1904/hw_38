@@ -5,9 +5,9 @@ export const Navigation = () => {
     return (
         <nav className={classes.navHolder}>
             <ul>
-                <li><NavLink to={"/"}>Main</NavLink></li>
-                <li><NavLink to={"/albums"} >Albums</NavLink></li>
-                <li><NavLink to={"/about"} >About</NavLink></li>
+                <li><NavLink to={"/"} className={({isActive}) => isActive ? classes.active : ''}>Main</NavLink></li>
+                <li><NavLink to={"/albums"} className={({isActive}) => isActive ? classes.active : ''}>Albums</NavLink></li>
+                <li><NavLink to={"/about"} className={({isActive}) => isActive ? classes.active : ''}>About</NavLink></li>
             </ul>
         </nav>
 

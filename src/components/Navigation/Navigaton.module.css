@@ -16,7 +16,7 @@ a {
     color: white;
 }
 
-a:hover{
+a:hover, .active{
     background-color: cadetblue;
 }
 

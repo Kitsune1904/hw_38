@@ -1,8 +1,14 @@
 
-.navHolder > li {
-    list-style: none;
+.navHolder > ul {
+    display: flex;
+    background-color: darkcyan;
+    margin: 0;
+    padding: 0;
 }
 
+li {
+    list-style: none;
+}
 
 a {
     text-decoration: none;
@@ -14,9 +20,3 @@ a:hover{
     background-color: cadetblue;
 }
 
-ul {
-    display: flex;
-    background-color: darkcyan;
-    margin: 0;
-    padding: 0;
-}

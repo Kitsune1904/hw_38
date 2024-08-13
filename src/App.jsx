@@ -34,7 +34,7 @@ function App() {
         <Routes>
             <Route path={'/'} element={<Main/>}></Route>
             <Route path={'/about'} element={<About/>}></Route>
-            <Route path={'/albums/*'} element={<Albums data={data}/>}></Route>
+            <Route path={'/albums'} element={<Albums data={data}/>}></Route>
             <Route path={'/albums/:id'} element={<Details/>}></Route>
         </Routes>
         <Outlet/>

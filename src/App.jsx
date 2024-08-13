@@ -1,5 +1,5 @@
 import "./App.css";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Outlet, Route, Routes} from "react-router-dom";
 import Albums from "./components/Alums/Albums.jsx";
 import {About} from "./components/About/About.jsx";
 import {Navigation} from "./components/Navigation/Navigation.jsx";
@@ -37,6 +37,7 @@ function App() {
             <Route path={'/albums/*'} element={<Albums data={data}/>}></Route>
             <Route path={'/albums/:id'} element={<Details/>}></Route>
         </Routes>
+        <Outlet/>
     </BrowserRouter>
   );
 }

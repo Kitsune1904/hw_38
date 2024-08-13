@@ -39,7 +39,6 @@ export const Details = () => {
                     throw new Error("Problem with internet connection");
                 }
                 const result = await responce.json();
-                console.log(result)
                 setDetails(getColors(result))
             } catch (err) {
                 console.error(err)
@@ -47,8 +46,6 @@ export const Details = () => {
         }
         fetchData()
     }, [id])
-
-    console.log(details)
 
     return (
         <div className={classes.detailsHolder}>

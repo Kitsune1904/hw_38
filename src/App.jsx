@@ -29,7 +29,7 @@ function App() {
     }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={"hw_38"}>
         <Navigation></Navigation>
         <Routes>
             <Route path={'/'} element={<Main/>}></Route>

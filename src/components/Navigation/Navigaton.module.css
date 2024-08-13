@@ -1,7 +1,8 @@
 
-li {
+.navHolder > li {
     list-style: none;
 }
+
 
 a {
     text-decoration: none;

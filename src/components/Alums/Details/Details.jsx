@@ -3,10 +3,8 @@ import {useParams} from "react-router-dom";
 import classes from './Details.module.css'
 
 const getColors = (data) => {
-
-
-
-    return data.map((el) => {
+    return (
+        data.map((el) => {
         let maxColor = el.url.split('/').pop();
         let minColor = el.thumbnailUrl.split('/').pop();
 
@@ -23,7 +21,7 @@ const getColors = (data) => {
             maxColor: maxColor,
             minColor: minColor
         }
-    })
+    }))
 }
 
 

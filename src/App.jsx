@@ -5,13 +5,7 @@ import {About} from "./components/About/About.jsx";
 import {Navigation} from "./components/Navigation/Navigation.jsx";
 import {Main} from "./components/Main/Main.jsx";
 import {useEffect, useState} from "react";
-import * as PropTypes from "prop-types";
 import {Details} from "./components/Alums/Details/Details.jsx";
-
-
-
-
-Details.propTypes = {children: PropTypes.node};
 
 function App() {
     const [data, setData] = useState(null);
